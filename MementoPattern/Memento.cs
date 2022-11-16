@@ -6,7 +6,6 @@ public class Memento
     {
         Content = content;
     }
-    public string Content { get; set; }
-
+    public string Content { get; }
 
 }

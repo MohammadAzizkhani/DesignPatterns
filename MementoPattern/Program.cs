@@ -1,6 +1,11 @@
 ﻿using MementoPattern;
+using MementoPattern.Sample;
+
 Originator editor = new();
 Caretaker caretaker = new();
+
+//Editor editor = new();
+//History caretaker = new();
 
 caretaker.Push(editor.CreateState());
 editor.Content = "A";

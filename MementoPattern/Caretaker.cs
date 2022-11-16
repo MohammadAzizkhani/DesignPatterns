@@ -2,16 +2,15 @@
 
 public class Caretaker
 {
-    public Stack<Memento> States { get; set; } = new();
-
+    private readonly Stack<Memento> _states = new();
 
     public Memento Pop()
     {
-        return States.Pop();
+        return _states.Pop();
     }
 
     public void Push(Memento state)
     {
-        States.Push(state);
+        _states.Push(state);
     }
 }
